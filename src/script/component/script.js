@@ -38,7 +38,8 @@ class NoteItem extends HTMLElement {
         archived: false,
       };
       await NoteApi.createNotes({title, body });
-      const NoteItem = await NoteApi.showNotes();
+      const noteitem = await NoteApi.showNotes();
+      console.log(noteitem);
       noteItem.setAttribute('title', newNote.title);
       noteItem.setAttribute('body', newNote.body);
       notesList.appendChild(noteItem);
