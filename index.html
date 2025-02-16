@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+
+  <link rel="icon" href="notes-image.jpg" sizes="50x50" />
+</head>
+<body>
+  <header>
+    <header-figure></header-figure>
+  </header>
+  <figure>
+    <image-figure></image-figure>
+  </figure>
+  <main>
+    <form id="note-form">
+      <input type="text" id="note-title" placeholder="Jdudul" required>
+      <textarea id="note-body" placeholder="Isi" required></textarea>
+      <button type="submit">Tambahkan</button>
+    </form>
+    <section id="notes-list"></section>
+  </main>
+  <div class="loader" id="loader"></div> <!--Indikator Loading-->
+</body>
+</html>
